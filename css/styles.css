@@ -97,7 +97,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container {
-    max-width: 1158px;
+    max-width: 1160px;
   }
 }
 
@@ -526,12 +526,13 @@ img {
 
   .information-list {
     display: flex;
-    box-sizing: content-box;
-    padding: 0;
+    max-width: 1160px;
+    padding: 0 16px;
   }
 
   .information-list > li {
     flex-basis: calc((100% - 3 * 24px) / 4);
+    max-width: 264px;
   }
 
   .information-title {
@@ -552,6 +553,30 @@ img {
 /* =============== EXAMPLES ============ */
 .examples {
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .examples {
+    display: block;
+    padding: 0px;
+    padding-bottom: 120px;
+  }
+
+  .examples-title {
+    margin: 0;
+  }
+
+  .examples-list {
+    margin-top: 72px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+  }
+
+  .examples-list > li {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+  }
 }
 
 /* =============== TEAM ================ */
